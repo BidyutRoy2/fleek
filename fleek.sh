@@ -4,9 +4,6 @@ echo "--------------------------------------------------------------------------
 curl -s https://raw.githubusercontent.com/BidyutRoy2/BidyutRoy2/main/logo.sh | bash
 echo "-----------------------------------------------------------------------------"
 
-# Exit immediately if a command exits with a non-zero status.
-set -e
-
 # Install Node.js 20.x
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 
