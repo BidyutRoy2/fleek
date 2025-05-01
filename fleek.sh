@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+# Install Node.js 20.x
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+
+# Install nodejs and npm
+sudo apt install -y nodejs npm
+
+# Install Fleek CLI
+sudo npm install -g @fleek-platform/cli
+
+# Initialize Fleek CLI
+fleek
+
+# Log in to Fleek
+fleek login
